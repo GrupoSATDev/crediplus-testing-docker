@@ -1,1 +1,0 @@
-import{pa as a}from"./chunk-YBEOGPR3.js";var o=(()=>{let t=class t{transform(r){return`${r.numCredito} - ${new Date(r.fechaAprobacion).toLocaleDateString("es-ES")}`}};t.\u0275fac=function(n){return new(n||t)},t.\u0275pipe=a({name:"formatoOptions",type:t,pure:!0,standalone:!0});let e=t;return e})();export{o as a};
