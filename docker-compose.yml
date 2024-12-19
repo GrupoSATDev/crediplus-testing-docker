@@ -5,10 +5,10 @@ services:
     build:
       context: ./BackEnd
     image: mcr.microsoft.com/dotnet/samples:aspnetapp
-    container_name: test_api_crediplus
+    container_name: crediplus_api
     restart: always
     ports:
-      - 8070:80
+      - 7070:80
     environment:
       - TZ=America/Bogota
       - ASPNETCORE_ENVIRONMENT=Development
@@ -17,15 +17,15 @@ services:
   crediplus_front:
     build:
       context: ./FrontEnd
-    container_name: test_front_crediplus
+    container_name: crediplus_front
     restart: always
     ports:
-      - 8073:80
+      - 7073:80
 
   crediplus_usuarios:
     build:
       context: ./Usuarios
-    container_name: test_usuarios_crediplus
+    container_name: crediplus_usuarios
     restart: always
     ports:
-      - 8079:80
+      - 7079:80
