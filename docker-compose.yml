@@ -1,31 +1,31 @@
 version: '3.1'
 
 services:
-  crediplus_api:
+  crediplus_api_pruebas:
     build:
       context: ./BackEnd
     image: mcr.microsoft.com/dotnet/samples:aspnetapp
-    container_name: crediplus_api
+    container_name: crediplus_api_pruebas
     restart: always
     ports:
-      - 7070:80
+      - 8070:80
     environment:
       - TZ=America/Bogota
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
 
-  crediplus_front:
+  crediplus_test_admin:
     build:
       context: ./FrontEnd
-    container_name: crediplus_front
+    container_name: crediplus_test_admin
     restart: always
     ports:
-      - 7073:80
+      - 8073:80
 
-  crediplus_usuarios:
+  crediplus_test_usuarios:
     build:
       context: ./Usuarios
-    container_name: crediplus_usuarios
+    container_name: crediplus_test_usuarios
     restart: always
     ports:
-      - 7079:80
+      - 8079:80
