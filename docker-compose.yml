@@ -20,7 +20,7 @@ services:
     container_name: crediplus_test_admin
     restart: always
     ports:
-      - 8073:80
+      - 8074:80
 
   crediplus_test_usuarios:
     build:
