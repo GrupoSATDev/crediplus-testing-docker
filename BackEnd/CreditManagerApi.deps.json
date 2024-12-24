@@ -12,6 +12,7 @@
           "BusinessLayer": "1.0.0",
           "Hangfire.AspNetCore": "1.8.15",
           "Hangfire.Core": "1.8.15",
+          "Hangfire.Dashboard.Basic.Authentication": "7.0.1",
           "Hangfire.NetCore": "1.8.15",
           "Hangfire.PostgreSql": "1.20.10",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.32",
@@ -110,6 +111,20 @@
           },
           "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
             "locale": "zh"
+          }
+        }
+      },
+      "Hangfire.Dashboard.Basic.Authentication/7.0.1": {
+        "dependencies": {
+          "Hangfire.AspNetCore": "1.8.15",
+          "Hangfire.Core": "1.8.15",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/HangfireBasicAuthenticationFilter.dll": {
+            "assemblyVersion": "7.0.1.0",
+            "fileVersion": "7.0.1.0"
           }
         }
       },
@@ -2066,6 +2081,13 @@
       "sha512": "sha512-+w8gT6CFH4jicVEsJ8WlMRJMNV2MG52JNtvKoXPFHFs6nkDTND6iDeCjydyHgp+85lZPRXc+s9/vkxD2vbPrLg==",
       "path": "hangfire.core/1.8.15",
       "hashPath": "hangfire.core.1.8.15.nupkg.sha512"
+    },
+    "Hangfire.Dashboard.Basic.Authentication/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SsWDM/FcgNOiZaG9RbOZzg9ZbAw2NJUzZY2V4ChnGaHFI3yT7CXE+LB9EshqE/MX/jT55QTtmnZ2JYy6atSJWA==",
+      "path": "hangfire.dashboard.basic.authentication/7.0.1",
+      "hashPath": "hangfire.dashboard.basic.authentication.7.0.1.nupkg.sha512"
     },
     "Hangfire.NetCore/1.8.15": {
       "type": "package",
