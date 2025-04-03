@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/enums/estados-solicitudes.ts"],
+  "sourcesContent": ["export enum EstadosSolicitudes {\r\n    APROBADA = 'Aprobada',\r\n    RECHAZADA = 'Rechazada',\r\n    PENDIENTE = 'Pendiente',\r\n    PENDIENTE_DESEMBOLSO = 'PendienteDesembolso',\r\n    APROBADO_DESEMBOLSO = 'AprobadaDesembolso',\r\n    RECHAZADA_DESEMBOLSO = 'RechazadaDesembolso',\r\n    REALIZADA_DESEMBOLSO = 'DesembolsoRealizado',\r\n}\r\n\r\nexport enum CodigosEstadosSolicitudes {\r\n    APROBADA = 'e626ea69-e995-4462-be9a-905326714781',\r\n    RECHAZADA = 'e626ea69-e995-4462-be9a-905326714780',\r\n    PENDIENTE = 'e626ea69-e995-4462-be9a-905326714782',\r\n    REALIZADA = 'e626ea69-e995-4462-be7a-805326734713',\r\n\r\n\r\n}\r\n"],
+  "mappings": ";AAAA,IAAY;CAAZ,SAAYA,qBAAkB;AAC1B,EAAAA,oBAAA,UAAA,IAAA;AACA,EAAAA,oBAAA,WAAA,IAAA;AACA,EAAAA,oBAAA,WAAA,IAAA;AACA,EAAAA,oBAAA,sBAAA,IAAA;AACA,EAAAA,oBAAA,qBAAA,IAAA;AACA,EAAAA,oBAAA,sBAAA,IAAA;AACA,EAAAA,oBAAA,sBAAA,IAAA;AACJ,GARY,uBAAA,qBAAkB,CAAA,EAAA;AAU9B,IAAY;CAAZ,SAAYC,4BAAyB;AACjC,EAAAA,2BAAA,UAAA,IAAA;AACA,EAAAA,2BAAA,WAAA,IAAA;AACA,EAAAA,2BAAA,WAAA,IAAA;AACA,EAAAA,2BAAA,WAAA,IAAA;AAGJ,GAPY,8BAAA,4BAAyB,CAAA,EAAA;",
+  "names": ["EstadosSolicitudes", "CodigosEstadosSolicitudes"]
+}

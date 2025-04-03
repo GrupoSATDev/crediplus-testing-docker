@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/generos.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { Observable } from 'rxjs';\r\nimport { AppSettingsService } from '../app-config/app-settings-service';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class GenerosService {\r\n\r\n  constructor(\r\n      private _http: HttpClient,\r\n      private appSettings: AppSettingsService\r\n  ) { }\r\n\r\n  getGeneros(): Observable<any> {\r\n      return this._http.get(this.appSettings.generos.url.base)\r\n  }\r\n\r\n  postGeneros(data): Observable<any> {\r\n      delete data.id;\r\n      return this._http.post(this.appSettings.generos.url.base, data)\r\n  }\r\n\r\n  putGeneros(data): Observable<any> {\r\n      const id = data.id;\r\n      delete data.id;\r\n      return this._http.put(`${this.appSettings.generos.url.base}/${id}`, data)\r\n  }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;AAQM,IAAO,kBAAP,MAAO,gBAAc;EAEzB,YACY,OACA,aAA+B;AAD/B,SAAA,QAAA;AACA,SAAA,cAAA;EACR;EAEJ,aAAU;AACN,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,QAAQ,IAAI,IAAI;EAC3D;EAEA,YAAY,MAAI;AACZ,WAAO,KAAK;AACZ,WAAO,KAAK,MAAM,KAAK,KAAK,YAAY,QAAQ,IAAI,MAAM,IAAI;EAClE;EAEA,WAAW,MAAI;AACX,UAAM,KAAK,KAAK;AAChB,WAAO,KAAK;AACZ,WAAO,KAAK,MAAM,IAAI,GAAG,KAAK,YAAY,QAAQ,IAAI,IAAI,IAAI,EAAE,IAAI,IAAI;EAC5E;;;mBApBW,iBAAc,mBAAA,UAAA,GAAA,mBAAA,kBAAA,CAAA;AAAA;mFAAd,iBAAc,SAAd,gBAAc,WAAA,YAFb,OAAM,CAAA;AAEd,IAAO,iBAAP;",
+  "names": []
+}

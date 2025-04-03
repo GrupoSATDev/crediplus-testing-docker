@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/gestion-creditos/gestion-creditos.routes.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\n\r\nexport default [\r\n    {\r\n        path: '',\r\n        children: [\r\n            {\r\n                path: 'solicitudes',\r\n                loadChildren: () => import('./solicitudes/solicitudes.routes')\r\n            },\r\n            {\r\n                path: 'creditos',\r\n                loadChildren: () => import('./creditos/creditos.routes')\r\n            },\r\n            {\r\n                path: 'detalle-consumo',\r\n                loadChildren: () => import('./detalle-consumo/detalle-consumo.routes')\r\n            },\r\n            {\r\n                path: 'consumos',\r\n                loadChildren: () => import('./consumos/consumos.routes')\r\n            },\r\n            {\r\n                path: 'desembolsos',\r\n                loadChildren: () => import('./desembolsos/desembolsos.routes')\r\n            },\r\n\r\n        ]\r\n    }\r\n\r\n] as Routes\r\n"],
+  "mappings": ";;;AAEA,IAAA,kCAAe;EACX;IACI,MAAM;IACN,UAAU;MACN;QACI,MAAM;QACN,cAAc,MAAM,OAAO,qBAAkC;;MAEjE;QACI,MAAM;QACN,cAAc,MAAM,OAAO,qBAA4B;;MAE3D;QACI,MAAM;QACN,cAAc,MAAM,OAAO,qBAA0C;;MAEzE;QACI,MAAM;QACN,cAAc,MAAM,OAAO,qBAA4B;;MAE3D;QACI,MAAM;QACN,cAAc,MAAM,OAAO,qBAAkC;;;;;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/tipo-solicitudes.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { AppSettingsService } from '../app-config/app-settings-service';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class TipoSolicitudesService {\r\n\r\n    constructor(\r\n        private _http: HttpClient,\r\n        private appSettings: AppSettingsService\r\n    ) {\r\n    }\r\n\r\n    getTipos(): Observable<any> {\r\n        return this._http.get(this.appSettings.tipoSolicitudes.url.base)\r\n\r\n    }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;AAQM,IAAO,0BAAP,MAAO,wBAAsB;EAE/B,YACY,OACA,aAA+B;AAD/B,SAAA,QAAA;AACA,SAAA,cAAA;EAEZ;EAEA,WAAQ;AACJ,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,gBAAgB,IAAI,IAAI;EAEnE;;;mBAXS,yBAAsB,mBAAA,UAAA,GAAA,mBAAA,kBAAA,CAAA;AAAA;2FAAtB,yBAAsB,SAAtB,wBAAsB,WAAA,YAFrB,OAAM,CAAA;AAEd,IAAO,yBAAP;",
+  "names": []
+}

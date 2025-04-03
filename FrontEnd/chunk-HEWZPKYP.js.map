@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/tipo-cuentas.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { AppSettingsService } from '../app-config/app-settings-service';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class TipoCuentasService {\r\n\r\n    constructor(\r\n        private _http: HttpClient,\r\n        private appSettings: AppSettingsService\r\n    ) { }\r\n\r\n    getTipoCuentas(): Observable<any> {\r\n        return this._http.get(this.appSettings.tipoCuentas.url.base)\r\n    }\r\n\r\n    getTipoCuenta(id): Observable<any> {\r\n        return this._http.get(`${this.appSettings.tipoCuentas.url.base}/${id}`)\r\n    }\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;AAQM,IAAO,sBAAP,MAAO,oBAAkB;EAE3B,YACY,OACA,aAA+B;AAD/B,SAAA,QAAA;AACA,SAAA,cAAA;EACR;EAEJ,iBAAc;AACV,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,YAAY,IAAI,IAAI;EAC/D;EAEA,cAAc,IAAE;AACZ,WAAO,KAAK,MAAM,IAAI,GAAG,KAAK,YAAY,YAAY,IAAI,IAAI,IAAI,EAAE,EAAE;EAC1E;;;mBAbS,qBAAkB,mBAAA,UAAA,GAAA,mBAAA,kBAAA,CAAA;AAAA;uFAAlB,qBAAkB,SAAlB,oBAAkB,WAAA,YAFjB,OAAM,CAAA;AAEd,IAAO,qBAAP;",
+  "names": []
+}

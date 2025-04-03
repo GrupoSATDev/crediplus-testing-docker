@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/estado-creditos.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { AppSettingsService } from '../app-config/app-settings-service';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class EstadoCreditosService {\r\n\r\n  constructor(\r\n      private _http: HttpClient,\r\n      private appSettings: AppSettingsService\r\n  ) { }\r\n\r\n    getEstadoCreditos(): Observable<any> {\r\n        return this._http.get(this.appSettings.estadoCreditos.url.base)\r\n    }\r\n\r\n    getEstadoCobros(): Observable<any> {\r\n      return this._http.get(this.appSettings.estadoCreditos.url.baseCobros)\r\n    }\r\n\r\n    getDetalleConsumo(): Observable<any> {\r\n      return this._http.get(this.appSettings.estadoCreditos.url.detalleConsumo)\r\n    }\r\n\r\n}\r\n"],
+  "mappings": ";;;;;;;;;;AAQM,IAAO,yBAAP,MAAO,uBAAqB;EAEhC,YACY,OACA,aAA+B;AAD/B,SAAA,QAAA;AACA,SAAA,cAAA;EACR;EAEF,oBAAiB;AACb,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,eAAe,IAAI,IAAI;EAClE;EAEA,kBAAe;AACb,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,eAAe,IAAI,UAAU;EACtE;EAEA,oBAAiB;AACf,WAAO,KAAK,MAAM,IAAI,KAAK,YAAY,eAAe,IAAI,cAAc;EAC1E;;;mBAjBS,wBAAqB,mBAAA,UAAA,GAAA,mBAAA,kBAAA,CAAA;AAAA;0FAArB,wBAAqB,SAArB,uBAAqB,WAAA,YAFpB,OAAM,CAAA;AAEd,IAAO,wBAAP;",
+  "names": []
+}

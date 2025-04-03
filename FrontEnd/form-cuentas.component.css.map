@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/gestion-bancos/cuentas-bancarias/form-cuentas/form-cuentas.component.scss"],
+  "sourcesContent": ["::ng-deep .custom-dialog-container {\r\n    @apply w-4/5 lg:w-2/5;\r\n}\r\n"],
+  "mappings": ";AACI,UAAA,CAAA;AAAA,SAAA;AAAA;AAAA,OAAA,CAAA,SAAA,EAAA;AAAA,YAAA,CAAA;AAAA,WAAA;AAAA;AAAA;",
+  "names": []
+}

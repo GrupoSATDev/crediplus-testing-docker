@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/reportes/reportes.routes.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\n\r\nexport default [\r\n    {\r\n        path: 'consumos',\r\n        loadChildren: () => import('./reporte de consumos/reporteConsumos.routes')\r\n    },\r\n    {\r\n        path: 'desembolsos',\r\n        loadChildren: () => import('./reporte-desembolsos/reporteDesembolsos.routes')\r\n    },\r\n    {\r\n        path: 'cobros',\r\n        loadChildren: () => import('./reporte-cobro-trabajadores/reporte-cobro-trabajadores.routes')\r\n    },\r\n    {\r\n        path: 'solicitudes',\r\n        loadChildren: () => import('./reporte-solicitudes/reporte-solicitudes.routes')\r\n    },\r\n    {\r\n        path: 'deudas',\r\n        loadChildren: () => import('./reporte-deudas/reporte-deudas.routes')\r\n    },\r\n\r\n\r\n] as Routes\r\n"],
+  "mappings": ";;;AAEA,IAAA,0BAAe;EACX;IACI,MAAM;IACN,cAAc,MAAM,OAAO,qBAA8C;;EAE7E;IACI,MAAM;IACN,cAAc,MAAM,OAAO,qBAAiD;;EAEhF;IACI,MAAM;IACN,cAAc,MAAM,OAAO,qBAAgE;;EAE/F;IACI,MAAM;IACN,cAAc,MAAM,OAAO,qBAAkD;;EAEjF;IACI,MAAM;IACN,cAAc,MAAM,OAAO,qBAAwC;;;",
+  "names": []
+}
