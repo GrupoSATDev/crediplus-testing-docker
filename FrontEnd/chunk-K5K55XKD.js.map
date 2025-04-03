@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/date-adapter.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { NativeDateAdapter } from '@angular/material/core';\r\n\r\n@Injectable()\r\nexport class DateAdapterService extends NativeDateAdapter {\r\n\r\n    override parse(value: string): Date | null {\r\n        if (value) {\r\n            const [year, month, day] = value.split('-').map(Number);\r\n            return new Date(year, month - 1, day);\r\n        }\r\n        return null;\r\n    }\r\n\r\n    override format(date: Date, displayFormat: Object): string {\r\n        const year = date.getFullYear();\r\n        const month = (date.getMonth() + 1).toString().padStart(2, '0');\r\n        const day = date.getDate().toString().padStart(2, '0');\r\n        return `${day}/${month}/${year}`;\r\n    }\r\n}\r\n"],
+  "mappings": ";;;;;;;AAIM,IAAO,sBAAP,MAAO,4BAA2B,kBAAiB;EAE5C,MAAM,OAAa;AACxB,QAAI,OAAO;AACP,YAAM,CAAC,MAAM,OAAO,GAAG,IAAI,MAAM,MAAM,GAAG,EAAE,IAAI,MAAM;AACtD,aAAO,IAAI,KAAK,MAAM,QAAQ,GAAG,GAAG;IACxC;AACA,WAAO;EACX;EAES,OAAO,MAAY,eAAqB;AAC7C,UAAM,OAAO,KAAK,YAAW;AAC7B,UAAM,SAAS,KAAK,SAAQ,IAAK,GAAG,SAAQ,EAAG,SAAS,GAAG,GAAG;AAC9D,UAAM,MAAM,KAAK,QAAO,EAAG,SAAQ,EAAG,SAAS,GAAG,GAAG;AACrD,WAAO,GAAG,GAAG,IAAI,KAAK,IAAI,IAAI;EAClC;;;;;4HAfS,mBAAkB,IAAA,KAAlB,mBAAkB;EAAA;AAAA,GAAA;uFAAlB,qBAAkB,SAAlB,oBAAkB,UAAA,CAAA;AAAzB,IAAO,qBAAP;",
+  "names": []
+}

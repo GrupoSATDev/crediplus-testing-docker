@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/utils/number-utils.ts"],
+  "sourcesContent": ["export function parseCurrency(value: string): number {\r\n    if (!value) {\r\n        return 0; // Retorna 0 si el valor es nulo o indefinido\r\n    }\r\n    // Elimina el símbolo de moneda, comas y convierte a número\r\n    const cleanedValue = value.replace(/[\\$,]/g, '');\r\n    return parseFloat(cleanedValue);\r\n}\r\n"],
+  "mappings": ";AAAM,SAAU,cAAc,OAAa;AACvC,MAAI,CAAC,OAAO;AACR,WAAO;EACX;AAEA,QAAM,eAAe,MAAM,QAAQ,UAAU,EAAE;AAC/C,SAAO,WAAW,YAAY;AAClC;",
+  "names": []
+}

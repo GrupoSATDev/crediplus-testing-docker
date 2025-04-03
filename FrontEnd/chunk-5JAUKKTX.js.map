@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/core/services/estados-datos.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { Subject } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class EstadosDatosService {\r\n  public stateGrid: Subject<boolean> = new Subject<boolean>();\r\n  public stateGridSolicitudes: Subject<{state: boolean, tab: number}> = new Subject<{state: boolean, tab: number}>\r\n  constructor() { }\r\n}\r\n"],
+  "mappings": ";;;;;;AAMM,IAAO,uBAAP,MAAO,qBAAmB;EAG9B,cAAA;AAFO,SAAA,YAA8B,IAAI,QAAO;AACzC,SAAA,uBAA+D,IAAI;EAC1D;;;mBAHL,sBAAmB;AAAA;wFAAnB,sBAAmB,SAAnB,qBAAmB,WAAA,YAFlB,OAAM,CAAA;AAEd,IAAO,sBAAP;",
+  "names": []
+}
