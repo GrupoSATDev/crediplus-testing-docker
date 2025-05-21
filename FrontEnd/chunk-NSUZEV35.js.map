@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/core/enums/estados.ts"],
-  "sourcesContent": ["export enum Estados {\r\n    ACTIVO = 'Activo',\r\n    INACTIVO = 'Inactivo'\r\n}\r\n"],
-  "mappings": ";AAAA,IAAY;CAAZ,SAAYA,UAAO;AACf,EAAAA,SAAA,QAAA,IAAA;AACA,EAAAA,SAAA,UAAA,IAAA;AACJ,GAHY,YAAA,UAAO,CAAA,EAAA;",
-  "names": ["Estados"]
-}

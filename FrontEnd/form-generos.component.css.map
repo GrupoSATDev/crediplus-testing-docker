@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/pages/configuraciones/generos/form-generos/form-generos.component.scss"],
-  "sourcesContent": ["::ng-deep .custom-dialog-container {\r\n    @apply w-full lg:w-1/4;\r\n}\r\n"],
-  "mappings": ";AACI,UAAA,CAAA;AAAA,SAAA;AAAA;AAAA,OAAA,CAAA,SAAA,EAAA;AAAA,YAAA,CAAA;AAAA,WAAA;AAAA;AAAA;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/core/enums/estados-creditos.ts"],
-  "sourcesContent": ["export enum EstadosCreditos {\r\n    EN_PROCESO = 'EnProceso',\r\n    SIN_FIJO = 'SinFijo',\r\n    BLOQUEADO = 'e626ea69-e995-6462-be8a-901326714780',\r\n    VENCIDO = 'e626ea69-e995-4462-be7a-905326714789',\r\n    EN_REVISION = 'e626ea69-e995-1462-be9a-905326714782',\r\n    RECHAZADO = 'e626ea69-e995-4162-be9a-905316714781',\r\n    APROBADO = 'e626ea69-e915-5462-be9a-905326714782',\r\n}\r\n\r\nexport enum CodigoEstadosCreditos {\r\n    APROBADO = 'e626ea69-e915-5462-be9a-905326714782',\r\n    RECHAZADA = ''\r\n}\r\n\r\nexport enum CodigoEstadosCreditosLiquidados {\r\n    LIQUIDADO = 'e626ea69-e995-4462-be2a-915326714790'\r\n}\r\n"],
-  "mappings": ";AAAA,IAAY;CAAZ,SAAYA,kBAAe;AACvB,EAAAA,iBAAA,YAAA,IAAA;AACA,EAAAA,iBAAA,UAAA,IAAA;AACA,EAAAA,iBAAA,WAAA,IAAA;AACA,EAAAA,iBAAA,SAAA,IAAA;AACA,EAAAA,iBAAA,aAAA,IAAA;AACA,EAAAA,iBAAA,WAAA,IAAA;AACA,EAAAA,iBAAA,UAAA,IAAA;AACJ,GARY,oBAAA,kBAAe,CAAA,EAAA;AAU3B,IAAY;CAAZ,SAAYC,wBAAqB;AAC7B,EAAAA,uBAAA,UAAA,IAAA;AACA,EAAAA,uBAAA,WAAA,IAAA;AACJ,GAHY,0BAAA,wBAAqB,CAAA,EAAA;AAKjC,IAAY;CAAZ,SAAYC,kCAA+B;AACvC,EAAAA,iCAAA,WAAA,IAAA;AACJ,GAFY,oCAAA,kCAA+B,CAAA,EAAA;",
-  "names": ["EstadosCreditos", "CodigoEstadosCreditos", "CodigoEstadosCreditosLiquidados"]
-}

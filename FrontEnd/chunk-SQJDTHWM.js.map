@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/core/pipes/formato-options.pipe.ts"],
-  "sourcesContent": ["import { Pipe, PipeTransform } from '@angular/core';\r\n\r\n@Pipe({\r\n  name: 'formatoOptions',\r\n  standalone: true\r\n})\r\nexport class FormatoOptionsPipe implements PipeTransform {\r\n\r\n  transform(item: any): string {\r\n    return `${item.numCredito} - ${new Date(item.fechaAprobacion).toLocaleDateString('es-ES')}`;\r\n  }\r\n\r\n}\r\n"],
-  "mappings": ";;;;;AAMM,IAAO,sBAAP,MAAO,oBAAkB;EAE7B,UAAU,MAAS;AACjB,WAAO,GAAG,KAAK,UAAU,MAAM,IAAI,KAAK,KAAK,eAAe,EAAE,mBAAmB,OAAO,CAAC;EAC3F;;;mBAJW,qBAAkB;AAAA;wGAAlB,qBAAkB,MAAA,MAAA,YAAA,KAAA,CAAA;AAAzB,IAAO,qBAAP;",
-  "names": []
-}

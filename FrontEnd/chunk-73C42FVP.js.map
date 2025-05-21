@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/core/services/tipos-pagos.service.ts"],
-  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { AppSettingsService } from '../app-config/app-settings-service';\r\nimport { Observable } from 'rxjs';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class TiposPagosService {\r\n\r\n  constructor(\r\n      private _http: HttpClient,\r\n      private appSettingService: AppSettingsService\r\n  ) { }\r\n\r\n    getTiposPagos(): Observable<any> {\r\n        return this._http.get(this.appSettingService.tiposPagos.url.base)\r\n    }\r\n\r\n    postTiposPagos(data): Observable<any> {\r\n        delete data.id;\r\n        return this._http.post(this.appSettingService.tiposPagos.url.base, data)\r\n    }\r\n\r\n    putTiposPagos(data): Observable<any> {\r\n        const id = data.id;\r\n        return this._http.put(`${this.appSettingService.tiposPagos.url.base}/${id}`, data)\r\n    }\r\n}\r\n"],
-  "mappings": ";;;;;;;;;;AAQM,IAAO,qBAAP,MAAO,mBAAiB;EAE5B,YACY,OACA,mBAAqC;AADrC,SAAA,QAAA;AACA,SAAA,oBAAA;EACR;EAEF,gBAAa;AACT,WAAO,KAAK,MAAM,IAAI,KAAK,kBAAkB,WAAW,IAAI,IAAI;EACpE;EAEA,eAAe,MAAI;AACf,WAAO,KAAK;AACZ,WAAO,KAAK,MAAM,KAAK,KAAK,kBAAkB,WAAW,IAAI,MAAM,IAAI;EAC3E;EAEA,cAAc,MAAI;AACd,UAAM,KAAK,KAAK;AAChB,WAAO,KAAK,MAAM,IAAI,GAAG,KAAK,kBAAkB,WAAW,IAAI,IAAI,IAAI,EAAE,IAAI,IAAI;EACrF;;;mBAnBS,oBAAiB,mBAAA,UAAA,GAAA,mBAAA,kBAAA,CAAA;AAAA;sFAAjB,oBAAiB,SAAjB,mBAAiB,WAAA,YAFhB,OAAM,CAAA;AAEd,IAAO,oBAAP;",
-  "names": []
-}

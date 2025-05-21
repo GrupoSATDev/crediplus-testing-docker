@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/pages/gestion-creditos/detalle-consumo/form-detalle-consumo/form-detalle-consumo.component.scss"],
-  "sourcesContent": ["::ng-deep .mat-step-header .mat-step-icon-selected,\r\n::ng-deep .mat-step-header .mat-step-icon-state-done,\r\n::ng-deep .mat-step-header .mat-step-icon-state-edit {\r\n    background-color: #155ee9 !important;\r\n    color: #fff;\r\n}\r\n\r\n::ng-deep .mat-vertical-stepper-header{\r\n    pointer-events: none !important;\r\n}\r\n"],
-  "mappings": ";AAAA,UAAA,CAAA,gBAAA,CAAA;AAAA,UAAA,CAAA,gBAAA,CAAA;AAAA,UAAA,CAAA,gBAAA,CAAA;AAGI,oBAAA;AACA,SAAA;;AAGJ,UAAA,CAAA;AACI,kBAAA;;",
-  "names": []
-}

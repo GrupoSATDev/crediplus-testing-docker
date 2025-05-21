@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/pages/gestion-creditos/desembolsos/form-desembolso/form-desembolso.component.scss"],
-  "sourcesContent": ["::ng-deep .mat-vertical-stepper-header{\r\n    pointer-events: none !important;\r\n}\r\n"],
-  "mappings": ";AAAA,UAAA,CAAA;AACI,kBAAA;;",
-  "names": []
-}
